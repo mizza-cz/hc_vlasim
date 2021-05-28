@@ -1,0 +1,62 @@
+html{
+   box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+   box-sizing: inherit;
+}
+html,
+body {
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+    
+}
+a{
+   display: inline-block;
+   text-decoration: none;
+}
+ul,
+li{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+   padding: 0;
+   margin: 0;
+}
+h1{
+   font-family: teko, sans-serif;
+   font-weight: 700;
+   font-size: 3rem;
+}
+
+body{
+   font-family: poppins, sans-serif;
+   // font-family: teko, sans-serif;
+   font-weight: 500;
+   font-size: 1rem;
+   color: #112944;
+}
+img{
+   width: 100%;
+   display: block;
+}
+
+.container{
+   padding: 0 15px;
+   margin: 0 auto;
+   max-width: 1310px;
+   width: 100%;
+}
+.container-fluid{
+   width:100%;
+   padding-right:15px;
+   padding-left:15px;
+   margin-right:auto;
+   margin-left:auto;
+}
+
+
