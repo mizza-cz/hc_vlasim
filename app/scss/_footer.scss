@@ -1,0 +1,151 @@
+.footer{
+   background-image: url('../images/content/sword-footer.png');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+  
+   .club-name{
+      font-weight: 700;
+      font-family: teko, sans-serif;
+      font-size: 6rem;
+      margin-bottom: 7px;
+   }
+   &__inner{
+      padding-left: 40px;
+      padding-top: 80px;
+   }
+   &__top{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding-right: 105px;
+      margin-bottom: 35px;
+   }
+   &__logo{
+      width: 190px;
+      height: 172px;
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+}
+.contacts{
+   display: flex;
+   ul+ul{
+      margin-left: 93px;
+   }
+   li{
+      h4{
+         letter-spacing: 0.025em;
+      }
+      font-size: 0.875rem;
+      margin-top: 10px;
+      line-height: 1.4;
+      
+      a{
+         color: #2465A9;
+      }
+   }
+}
+.footer__bottom{
+   align-items: center;
+   justify-content: space-between;
+   display: flex;
+   padding-right: 40px;
+   padding-bottom: 70px;
+   li a{
+      font-size: 0.875rem;
+   }
+   li{
+      margin-left: 41px;
+   }
+   ul{
+      display: flex;
+      margin-left: -41px;
+   }
+   a{
+      color: #112944;
+   }
+}
+.copyright{
+   display: flex;
+   align-items: center;
+   font-size: 0.875rem;
+   a{
+      width: 70px;
+      height: 21px;
+      margin: 0 11px 0 13px;
+   }
+}
+
+@media(max-width:1240px){
+   .copyright{
+      margin-left: auto;
+   }
+   .footer__top{
+      padding-right: 40px;
+   }
+   .footer__bottom{
+      flex-wrap: wrap;
+      padding-bottom: 40px;
+      padding-right: 20px;
+      ul{
+         width: 100%;
+         margin-bottom: 30px;
+      }
+   }
+}
+@media(max-width: 992px){
+ 
+   .footer__bottom li{
+      margin-left: 35px ;
+      margin-bottom: 10px;
+   }
+   .footer__bottom ul{
+      flex-wrap: wrap;
+      margin-left: -35px;
+   }
+   .footer .club-name{
+      font-size: 4rem;
+   }
+}
+@media(max-width: 680px){
+   
+   .footer__logo{
+      background-size: contain;
+      width: 161px;
+      height: 161px;
+   }
+   .footer .club-name{
+      display: none;
+   }
+   .footer__bottom{
+      padding-right: 0;
+   }
+   .contacts ul+ul{
+      margin-left: 50px;
+   }
+   .footer__bottom ul{
+      justify-content: center;
+      margin-left: 0;
+   }
+   .footer__inner{
+      padding-top: 60px;
+      padding-left: 0;
+   }
+   .footer__top{
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-right: 0;
+   }
+   .contacts{
+      width: 100%;
+      justify-content: center;
+   }
+   .copyright{
+      margin: 0 auto;
+   }
+   .footer__bottom li{
+      margin-left: 10px;
+      margin-right: 10px;
+   }
+}

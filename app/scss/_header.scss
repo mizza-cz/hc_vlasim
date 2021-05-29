@@ -1,5 +1,5 @@
 .header{
-   // border-top: 40px solid #212121;
+   border-top: 40px solid #212121;
    position: relative;
    z-index: 999;
 }
@@ -8,7 +8,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 224px;
+  padding-left: 186px;
+  padding-right: 40px;
   height: 40px;
   .club-name{
      text-transform: uppercase;
@@ -126,7 +127,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
    width: 133px;
    height: 120px;
    position: absolute;
-   left: 40px;
+   left: 0px;
    top: -23px;
    transition: all .4s;
    &:hover{
@@ -145,7 +146,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 .header__nav{
    display: flex;
    position: relative;
-  
+   padding-right: 40px;
    justify-content: flex-end;
 }
 
@@ -251,6 +252,10 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
  }
 
  @media(max-width:1280px){
+    .head,
+    .header__nav{
+       padding-right: 0;
+    }
    .navbar__menu-list+.navbar__menu-list {
       padding-left: 41px;
       margin-left: 26.3px;
@@ -347,7 +352,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
       z-index: 119999;
     }
     .sidebar-btn_close{
-      padding: 4px 16px 8px 0;
+      padding: 10px 16px 8px 0;
       text-align: right;
       border-bottom: 1px solid #393939;
 

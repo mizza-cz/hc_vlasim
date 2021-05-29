@@ -27,10 +27,24 @@ h1,h2,h3,h4,h5,h6,p{
    padding: 0;
    margin: 0;
 }
-h1{
+h1,h2{
    font-family: teko, sans-serif;
    font-weight: 700;
    font-size: 3rem;
+}
+h2{
+   color: #264198;
+   margin-bottom: 6px;
+}
+h3{
+   font-size: 2.25rem;
+}
+h4{
+   font-size: 1.25rem;
+   line-height: 110%;
+   font-family: teko, sans-serif;
+   font-weight: 700;
+   
 }
 
 body{
@@ -39,6 +53,13 @@ body{
    font-weight: 500;
    font-size: 1rem;
    color: #112944;
+}
+p{
+   line-height: 160%;
+   font-family: poppins, sans-serif;
+   letter-spacing: -0.1px;
+   font-weight: 500;
+   font-size: 1rem;
 }
 img{
    width: 100%;
@@ -60,3 +81,62 @@ img{
 }
 
 
+.link{
+   font-size: 1rem;
+   font-family: poppins, sans-serif;
+   font-weight: 500;
+   color: #2465A9;
+   position: relative;
+   padding-right: 15px;
+   border-radius: 33px;
+   border: 1px solid #264198;
+   display: flex;
+   width: max-content;
+   margin: 0 auto;
+   padding: 12px 38px 12px 30px;
+   &::before{
+      content: '';
+      position: absolute;
+      background-image: url('../images/svg/arrow-icon.svg');
+      width: 6px;
+      height: 9px;
+      right: 26px;
+      top: 15px;
+      background-size: cover;
+   }
+}
+table{
+   width: 100%;
+   border-collapse: collapse;
+}
+tr th,
+tr:nth-child(odd) td {
+   background-color: #f7f7f7;
+}
+tr td{
+   text-align: center;
+}
+tr td:nth-child(2){
+   text-align: left;
+}
+tr td,
+tr th{
+   font-size: 1rem;
+   font-weight: 500;
+   padding: 11px 8px;
+}
+tr td:first-child{
+   color: #2465A9;
+}
+tr td:last-child,
+tr th:last-child{
+   padding-right: 30px;
+}
+tr td:first-child,
+tr th:first-child{
+   padding-left: 9px;
+   padding-right: 2px;
+}
+tr th{
+   text-align: left;
+}
