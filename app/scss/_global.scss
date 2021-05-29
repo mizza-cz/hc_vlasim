@@ -38,6 +38,8 @@ h2{
 }
 h3{
    font-size: 2.25rem;
+   font-family: teko, sans-serif;
+   font-weight: 700;
 }
 h4{
    font-size: 1.25rem;
@@ -72,6 +74,12 @@ img{
    max-width: 1310px;
    width: 100%;
 }
+.container-small{
+   max-width: 880px;
+   padding: 0 15px;
+   margin: 0 auto;
+   width: 100%;
+}
 .container-fluid{
    width:100%;
    padding-right:15px;
@@ -79,7 +87,11 @@ img{
    margin-right:auto;
    margin-left:auto;
 }
-
+.container-text{
+   max-width: 634px;
+   width: 100%;
+   margin: 0 auto;
+}
 
 .link{
    font-size: 1rem;

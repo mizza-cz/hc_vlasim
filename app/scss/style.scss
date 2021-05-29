@@ -2,6 +2,7 @@
 @import 'global';
 @import 'header';
 @import 'footer';
+@import 'clanek';
 @import 'topstory';
 
 // zapasy-homepage
@@ -221,8 +222,12 @@
       margin-bottom: 5px;
       line-height: 105%;
    }
+   .article_list__text h3{
+      text-align: left;
+   }
    .article_list__text{
       padding-top: 3px;
+     
      
    }
   
@@ -255,7 +260,7 @@ tr.vlasim{
 }
 .news {
 
-   border-bottom: 1px solid #112944;
+ 
   
    .tabulka{
       padding: 51px 0 0 53px;
@@ -277,6 +282,11 @@ tr.vlasim{
       max-width: 850px;
       padding-top: 51px;
       padding-bottom: 77px;
+     
+   }
+}
+.homepage{
+   .centrum__wrapper{
       border-right: 1px solid #112944;
    }
 }
