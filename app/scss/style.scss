@@ -4,7 +4,8 @@
 @import 'footer';
 @import 'clanek';
 @import 'topstory';
-
+@import 'tabulka';
+// index html
 // zapasy-homepage
 .zapasy{
    border-bottom: 1px solid #112944;
@@ -290,5 +291,170 @@ tr.vlasim{
       border-right: 1px solid #112944;
    }
 }
-@import 'media';
+table{
+   tr th:nth-child(2){
+      text-align: left;
+   }
+   tr th{
+      text-align: center;
+   }
+}
 
+
+/// index media
+
+@media(max-width:1340px){
+   .news .centrum__wrapper{
+      max-width: 60%;
+      flex: 0 0 60%;
+   }
+   .news .tabulka{
+      flex: 0 0 40%;
+      max-width: 40%;
+   }
+   .zapasy--scroll{
+      overflow-y: auto;
+   }
+   .zapasy__inner{
+      width: 1292px;
+   }
+}
+@media(max-width:1100px){
+   .news{
+      padding-bottom: 50px;
+   }
+   .news .centrum__wrapper{
+      border-right: none;
+      padding-top: 0;
+      padding-bottom: 0;
+   }
+   .news .tabulka h2{
+      margin-left: 0;
+   }
+   
+   .centrum .zapasy__item{
+      flex: 0 60%;
+      max-width: 60%;
+   }
+   .centrum__zapasy{
+      flex: 100%;
+   }
+   .centrum__inner,
+   .news__inner{
+      flex-wrap: wrap;
+   }
+   .news .tabulka{
+      padding-left: 0;
+   }
+   .news .centrum__wrapper,
+   .news .tabulka{
+      max-width: 100%;
+      flex: 100%;
+   }
+   .centrum__wrapper{
+      max-width: 100%;
+      margin-bottom: 30px;
+   }
+   .centrum__wrapper .link{
+      margin: 0 auto;
+   }
+}
+@media(max-width:992px){
+   .centrum .zapasy__item{
+      flex: 0 70%;
+      max-width: 70%;
+   }
+   .centrum__wrapper{
+      .article__box{
+         flex: 100%;
+         max-width: 100%;
+      }
+   }
+   .rennab__inner{
+      flex-wrap: wrap;
+   }
+   .rennab__item{
+      flex: 100%;
+      max-width: 100%;
+      margin-bottom: 15px;
+   }
+   .homepage__rennab-link{
+      width: 100%;
+      height: 200px;
+      img{
+         height: 100%;
+
+      }
+   }
+}
+
+@media(max-width:770px){
+   .centrum__wrapper{
+      .col-sm-10{
+         flex: 0 70%;
+         max-width: 70%;
+      }
+   }
+   .centrum .zapasy__item{
+      flex: 100%;
+      max-width: 100%;
+   }
+   .centrum__wrapper .article__box{
+      padding-right: 0;
+   }
+   .centrum__wrapper .article_list__text h3 a{
+      font-size: 1.5rem;
+   }
+}
+@media(max-width:540px){
+   .centrum__wrapper .article_list__image{
+      height: 300px;
+      max-width: 100%;
+      margin-bottom: 20px;
+   }
+   .centrum__wrapper .article_list__item{
+      flex-wrap: wrap;
+   }
+   .centrum__wrapper .col-sm-10{
+      max-width: 100%;
+      flex: 100%;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+   }
+}
+
+@media(max-width:480px){
+   .centrum .zapasy__list{
+      justify-content: center;
+   }
+   .centrum  .zapasy__item img{
+      display: none;
+   }
+   .centrum .zapasy__item{
+      flex-direction: column;
+   }
+   .zapasy__item .zapasy__box{
+      padding-right: 20px;
+      padding-left: 20px;
+      
+   }
+   .centrum__wrapper .article_list__image{
+      height: 270px;
+   }
+   .homepage__rennab-link{
+      height: 170px;
+   }
+}
+
+@media(max-width:450px){
+   h2{
+      font-size: 2rem;
+   }
+  
+}
+
+@media(max-width:400px){
+   .centrum__wrapper .article_list__image{
+      height: 220px;
+   }
+}

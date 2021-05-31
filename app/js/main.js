@@ -1,6 +1,9 @@
 $(function(){
   
-   
+   $('select').styler();
+   $(function () {
+     $('[data-toggle="tooltip"]').tooltip();
+   });
    $('.navbar__menu-item').on('click', function () {
       $(this).closest('.navbar__menu-list').toggleClass('active');
     });
