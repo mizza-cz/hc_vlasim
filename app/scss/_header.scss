@@ -240,7 +240,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
    }
  }
 
- .dropdown-menu__list {
+ .dropdown-menu__list a{
    width: 100%;
    padding-left: 10px;
    padding-right: 10px;
@@ -250,8 +250,9 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
     width: 100%;
     &:hover{
       background-color: #fff;
-      color: #112944;
-   
+     a{
+       color: #112944;
+    }
    }
  }
 
