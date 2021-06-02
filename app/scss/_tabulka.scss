@@ -1,4 +1,23 @@
-
+.head-page{
+   display: flex;
+   align-items: baseline;
+   margin-bottom: 40px;
+   a{
+      color: #2465A9;
+      &:hover{
+         text-decoration: underline;
+      }
+   }
+   h2{
+      margin-right: 50px;
+   }
+   h2 span {
+      color: #112944;
+   }
+   form{
+      margin-left: auto;
+   }
+}
 .tabulka-page{
    padding-top: 81px;
    padding-bottom: 98px;
@@ -6,9 +25,10 @@
       position: relative;
       padding-left: 332px;
       &::before{
+         
          position: absolute;
          content: '';
-         background: url('../images/content/table-page.png');
+         background: url('../images/decorate/table-page.png');
          background-repeat: no-repeat;
          left: 0;
          width: 311px;
@@ -16,27 +36,7 @@
          top: -15px;
       }
    }
-   &__top{
-      display: flex;
-      align-items: baseline;
-      margin-bottom: 40px;
-      a{
-         color: #2465A9;
-         &:hover{
-            text-decoration: underline;
-         }
-      }
-      h2{
-         margin-right: 50px;
-      }
-      h2 span {
-         color: #112944;
-      }
-      form{
-         margin-left: auto;
-      }
-     
-   }
+
 }
 .jq-selectbox__select{
    cursor: pointer;
@@ -82,7 +82,7 @@
 }
 
 @media(max-width:1120px){
-   .tabulka-page__top{
+   .head-page{
       flex-wrap: wrap;
       align-items: center;
       h2{
@@ -108,11 +108,11 @@
 }
 
 @media(max-width:400px){
-   .tabulka-page__top a{
+   .head-page a{
       margin-bottom: 20px;
       width: 100%;
    }
-   .tabulka-page__top form{
+   .head-page form{
       width: 100%;
    }
 }
