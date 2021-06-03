@@ -449,6 +449,18 @@ table{
 }
 
 @media(max-width:450px){
+   .zapasy__inner{
+      width: 1185px;
+   }
+   .zapasy__item .zapasy__box{
+      margin-top: 0;
+   }
+   .zapasy__item{
+      flex-direction: column;
+   }
+   .zapasy__item img{
+      display: none;
+   }
    h2{
       font-size: 2rem;
    }
@@ -456,7 +468,16 @@ table{
 }
 
 @media(max-width:400px){
+   .zapasy__inner{
+      width: 1106px;
+   }
    .centrum__wrapper .article_list__image{
       height: 220px;
    }
+}
+@media(max-width:380px){
+   .zapasy__inner{
+      width: 1060px;
+   }
+  
 }

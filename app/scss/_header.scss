@@ -72,6 +72,7 @@ input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s eas
 input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
 input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
    input{
+      background-color: transparent;
       outline: none;
       padding-left: 16px;
       border: none;
