@@ -385,7 +385,10 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
          input{
             height: 100%;
             width: 100%;
-            
+            line-height: 160%;
+            &::placeholder{
+               line-height: 160%;
+            }
          }
        }
     }
