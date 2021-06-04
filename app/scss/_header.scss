@@ -383,11 +383,9 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
          margin: 20px auto 20px auto;
          height: 30px;
          input{
-            height: 25px;
+            height: 100%;
             width: 100%;
-            &::placeholder{
-               
-            }
+            
          }
        }
     }
