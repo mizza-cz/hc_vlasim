@@ -2,16 +2,17 @@
    background-color: #010101;
    position: relative;
    &::before{
-      // content: '';
-      // position: fixed;
-      // width: 3163px;
-      // height: 1782px;
-      // left: -889px;
-      // top: -353px;
-      // background-image: url('../images/legendy/flag.png');
-      // background-repeat: no-repeat;
-      // background-size: cover;
-      // opacity: .2;
+      position: absolute;
+      content: '';
+      width: 2902px;
+      height: 2902px;
+      left: 0;
+      top: 0;
+      z-index: -1;
+     background-image: url('../images/legendy/mask.png');
+     background-repeat: no-repeat;
+     opacity: .4;
+     position: fixed;
    }
 
    &__title{
@@ -28,6 +29,8 @@
       font-family: teko, sans-serif;
       font-weight: 700;
       opacity: 0.5;
+      
+     
 
       &::after{
          content: '';
@@ -338,5 +341,122 @@
             -webkit-text-stroke-color: #264198;
          }
       }
+   }
+}
+
+
+@media(max-width:1340px){
+   .legendy__content .row:nth-of-type(9), .legendy__content .row:nth-of-type(18), .legendy__content .row:nth-of-type(27), .legendy__content .row:nth-of-type(36), .legendy__content .row:nth-of-type(45), .legendy__content .row:nth-of-type(54){
+      margin-bottom: 30px;
+   }
+   .legendy__content .row{
+      margin: 0;
+   }
+    
+   .legendy__content .row:nth-of-type(odd) .legendy__item{
+      margin-left: auto;
+      margin-top: 30px;
+      margin-right: 0;
+   }
+   .legendy__content .row:nth-of-type(even) .legendy__item{
+      margin-left: 0;
+      margin-top: 30px;
+   }
+}
+
+@media(max-width:800px){
+   .legendy .container{
+      padding: 0 20px;
+   }
+   .legendy__img{
+      height: 300px;
+      width: 300px;
+      img{
+         height: 100%;
+         object-fit: contain;
+      }
+   }
+   .legendy h1{
+      font-size: 4rem;
+      line-height: 100%;
+   }
+}
+@media(max-width:680px){
+   .legendy__logo{
+      right: 20px;
+      left: auto;
+      width: 80px;
+      height: 80px;
+   }
+}
+@media(max-width:660px){
+   .legendy__header.sticky .legendy__link{
+      position: relative;
+   }
+   .legendy__title{
+      display: none;
+   }
+   .legendy__content .row:nth-of-type(odd) .legendy__item,
+   .legendy__content .row:nth-of-type(even) .legendy__item{
+      margin-left: 0;
+      margin-right: 0;
+   }
+   .legendy__content .row{
+      justify-content: start;
+   }
+}
+
+@media(max-width:540px){
+   
+   .legendy__content .row{
+      margin-bottom: 50px;
+   }
+   .legendy h1{
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: 30px;
+      width: 100%;
+      text-align: center;
+      span:before{
+         right: 0;
+         margin: 0 auto;
+      }
+   }
+   .legendy__item{
+      width: 100%;
+   }
+   .legendy__img{
+      max-width: 320px;
+      img{
+         object-fit: cover;
+      }
+   }
+   .legendy__item a{
+      width: 100%;
+      flex-direction: column;
+   }
+}
+
+@media(max-width:380px){
+   .legendy__header{
+      margin-bottom: 20px;
+   }
+   .legendy__menu{
+      height: auto;
+      flex-wrap: wrap-reverse;
+      h6{
+         margin-top: 30px;
+         width: 100%;
+      }
+   }
+   .legendy__logo{
+      right: 0;
+      left: 0;
+      position: relative;
+   }
+   .legendy__img{
+      max-width: 100%;
+      width: 100%;
    }
 }
