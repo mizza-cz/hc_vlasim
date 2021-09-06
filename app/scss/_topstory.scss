@@ -17,7 +17,11 @@
       }
    }
 }
-
+.topstory__image{
+   img{
+      object-fit: cover;
+   }
+}
 .article_list__image{
    position:relative;
    line-height:0;
